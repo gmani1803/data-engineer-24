@@ -19,7 +19,7 @@ By linking these dimensions to the fact table through foreign keys, we establish
 
 ## Dimension
 
-#Members Dimension:
+# Members Dimension:
 
 | Column Name      | Type    | Description                                             |
 |------------------|---------|---------------------------------------------------------|
@@ -29,7 +29,7 @@ By linking these dimensions to the fact table through foreign keys, we establish
 | member_join_date | date    | Date when the member joined the gym.                  |
 | member_status    | varchar | Current status of the membership (e.g., active, suspended, expired). |
 
-#Locations Dimension:
+# Locations Dimension:
 
 | Column Name         | Type    | Description                                                  |
 |---------------------|---------|--------------------------------------------------------------|
@@ -40,7 +40,7 @@ By linking these dimensions to the fact table through foreign keys, we establish
 | location_state      | varchar | State or province where the gym location is situated. |
 | location_country    | varchar | Country where the gym location is situated.           |
 
-#Activities Dimension:
+# Activities Dimension:
 
 | Column Name              | Type    | Description                                                     |
 |--------------------------|---------|-----------------------------------------------------------------|
@@ -50,7 +50,7 @@ By linking these dimensions to the fact table through foreign keys, we establish
 | activity_duration_minutes| int     | Duration of the activity or class in minutes.             |
 | activity_level           | varchar | Difficulty level of the activity (e.g., beginner, intermediate, advanced). |
 
-#Trainers Dimension:
+# Trainers Dimension:
 
 | Column Name                | Type    | Description                                                          |
 |----------------------------|---------|----------------------------------------------------------------------|
