@@ -1,7 +1,9 @@
 # Exercise 2
 
 ## Business Process Description
-
+We are implementing a dimensional modeling approach to represent the process of gym check-ins. The fact table "GymCheckIns" serves as the central entity, capturing key metrics such as check-in ID, member ID, check-in date and time, check-in location ID, check-in duration, check-in type, activity ID, and trainer ID.
+The associated dimensions include "Members," "Locations," "Activities," and "Trainers," each providing detailed attributes related to gym membership, gym locations, activities/classes offered, and trainer information, respectively.
+By linking these dimensions to the fact table through foreign keys, we establish a relational structure that allows for in-depth analysis of member behavior, location performance, activity popularity, and trainer effectiveness. This technical implementation enables efficient data retrieval and analytics, facilitating informed decision-making and optimization of gym operations.
 ## Fact Table
 
 | Column Name           | Type    | Description                                                   |
@@ -17,7 +19,7 @@
 
 ## Dimension
 
-Members Dimension:
+#Members Dimension:
 
 | Column Name      | Type    | Description                                             |
 |------------------|---------|---------------------------------------------------------|
@@ -27,7 +29,7 @@ Members Dimension:
 | member_join_date | date    | Date when the member joined the gym.                  |
 | member_status    | varchar | Current status of the membership (e.g., active, suspended, expired). |
 
-Locations Dimension:
+#Locations Dimension:
 
 | Column Name         | Type    | Description                                                  |
 |---------------------|---------|--------------------------------------------------------------|
@@ -38,7 +40,7 @@ Locations Dimension:
 | location_state      | varchar | State or province where the gym location is situated. |
 | location_country    | varchar | Country where the gym location is situated.           |
 
-Activities Dimension:
+#Activities Dimension:
 
 | Column Name              | Type    | Description                                                     |
 |--------------------------|---------|-----------------------------------------------------------------|
@@ -48,7 +50,7 @@ Activities Dimension:
 | activity_duration_minutes| int     | Duration of the activity or class in minutes.             |
 | activity_level           | varchar | Difficulty level of the activity (e.g., beginner, intermediate, advanced). |
 
-Trainers Dimension:
+#Trainers Dimension:
 
 | Column Name                | Type    | Description                                                          |
 |----------------------------|---------|----------------------------------------------------------------------|
